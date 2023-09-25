@@ -17,10 +17,11 @@
         height: 364px;
         flex: 0 1 40%;
         border-radius: 32px;
-        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>), lightgray 0px -6.667px / 100.712% 103.663% no-repeat, #F8F8F8;
         overflow: hidden;
         padding: 0 55px 45px 55px;
         box-sizing: border-box;
+        
+        background: rgba(0, 0, 0, 0.4);
 
         &_long {
             flex: 0 1 57%;
@@ -35,6 +36,12 @@
     
             object-fit: cover;
             z-index: -1;
+        }
+
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: translateY(-10px);
         }
     }
 
@@ -53,10 +60,20 @@
     }
 
     &__button {
-        
+        position: absolute;
+        left: 55px;
+        bottom: 45px;
     }
 
     &__link {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration-line: underline;
+        position: absolute;
+        bottom: 70px;
+        left: 300px;    
+        padding-right: 10px;
     }
 }
 
