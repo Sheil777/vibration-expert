@@ -6,7 +6,6 @@
         h2 {
             max-width: 810px;
             color: var(--dark-color, #3B444E);
-            font-family: 'TT Firs Neue';
             font-size: 52px;
             font-style: normal;
             font-weight: 600;
@@ -35,11 +34,16 @@
     }
 
     &__img {
+        height: 128px;
+        width: 128px;
+        background-color: #E6ECF4;
+        border-radius: 50%;
+        overflow: hidden;
     }
 
     &__name {
+        margin-top: 24px;
         color: var(--dark-color, #3B444E);
-        font-family: TT Firs Neue;
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
@@ -47,8 +51,8 @@
     }
 
     &__text {
+        margin-top: 12px;
         color: var(--base-color, #6E7C87);
-        font-family: TT Firs Neue;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -56,6 +60,7 @@
 
         b {
             color: var(--dark-color, #3B444E);
+            font-weight: 600;
         }
     }
 }
