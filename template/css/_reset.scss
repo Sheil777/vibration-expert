@@ -61,3 +61,18 @@ body {
     --dark-color: #3B444E;
     --base-color: #6E7C87;
 }
+
+
+.color__blue {
+    color: #2787F5;
+}
+
+.section__header {
+    width: 100%;
+    text-align: center;
+    color: var(--dark-color, #3B444E);
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

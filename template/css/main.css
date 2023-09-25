@@ -61,6 +61,20 @@ body {
   --base-color: #6E7C87;
 }
 
+.color__blue {
+  color: #2787F5;
+}
+
+.section__header {
+  width: 100%;
+  text-align: center;
+  color: var(--dark-color, #3B444E);
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .promo {
   height: 980px;
 }
@@ -68,16 +82,6 @@ body {
 .WhyChooseUs {
   background: #F8FBFF;
   padding-top: 90px;
-}
-.WhyChooseUs__container h2 {
-  max-width: 810px;
-  color: var(--dark-color, #3B444E);
-  font-size: 52px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-align: center;
-  margin: 0 auto;
 }
 .WhyChooseUs__items {
   display: flex;
@@ -121,8 +125,4 @@ body {
 .WhyChooseUs__text b {
   color: var(--dark-color, #3B444E);
   font-weight: 600;
-}
-
-.color__blue {
-  color: #2787F5;
 }/*# sourceMappingURL=main.css.map */

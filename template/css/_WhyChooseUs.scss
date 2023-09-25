@@ -2,19 +2,6 @@
     background: #F8FBFF;
     padding-top: 90px;
 
-    &__container {
-        h2 {
-            max-width: 810px;
-            color: var(--dark-color, #3B444E);
-            font-size: 52px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            text-align: center;
-            margin: 0 auto;
-        }
-    }
-
     &__items {
         display: flex;
         justify-content: space-between;
@@ -62,11 +49,5 @@
             color: var(--dark-color, #3B444E);
             font-weight: 600;
         }
-    }
-}
-
-.color {
-    &__blue {
-        color: #2787F5;
     }
 }
