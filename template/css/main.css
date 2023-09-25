@@ -75,6 +75,19 @@ body {
   line-height: normal;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 68px;
+  border-radius: 48px;
+  background: linear-gradient(95deg, #1A1D83 -65.07%, #274F9E 42.74%, #477BC9 155.14%), #FFF;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .promo {
   height: 980px;
 }
@@ -82,6 +95,7 @@ body {
 .WhyChooseUs {
   background: #F8FBFF;
   padding-top: 90px;
+  padding-bottom: 28px;
 }
 .WhyChooseUs__items {
   display: flex;
@@ -125,4 +139,46 @@ body {
 .WhyChooseUs__text b {
   color: var(--dark-color, #3B444E);
   font-weight: 600;
+}
+
+.services {
+  padding-top: 90px;
+}
+.services__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 60px;
+}
+.services__item {
+  position: relative;
+  height: 364px;
+  flex: 0 1 40%;
+  border-radius: 32px;
+  overflow: hidden;
+  padding: 0 55px 45px 55px;
+  box-sizing: border-box;
+}
+.services__item_long {
+  flex: 0 1 57%;
+}
+.services__item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.services__name {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  position: absolute;
+  bottom: 140px;
+  left: 55px;
 }/*# sourceMappingURL=main.css.map */

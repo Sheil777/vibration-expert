@@ -76,3 +76,18 @@ body {
     font-weight: 600;
     line-height: normal;
 }
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 68px;
+    border-radius: 48px;
+    background: linear-gradient(95deg, #1A1D83 -65.07%, #274F9E 42.74%, #477BC9 155.14%), #FFF;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
