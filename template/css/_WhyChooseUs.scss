@@ -1,0 +1,67 @@
+.WhyChooseUs {
+    background: #F8FBFF;
+    padding-top: 90px;
+
+    &__container {
+        h2 {
+            max-width: 810px;
+            color: var(--dark-color, #3B444E);
+            font-family: 'TT Firs Neue';
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    &__item {
+        max-width: 447px;
+        height: 477px;
+        padding: 45px 45px 45px 50px;
+        box-sizing: border-box;
+        border-radius: 32px;
+        background: #FFF;
+        box-shadow: 0px 0px 25px 0px rgba(14, 35, 59, 0.05);
+        margin-bottom: 30px;
+    }
+
+    &__img {
+    }
+
+    &__name {
+        color: var(--dark-color, #3B444E);
+        font-family: TT Firs Neue;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__text {
+        color: var(--base-color, #6E7C87);
+        font-family: TT Firs Neue;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%; /* 23.2px */
+
+        b {
+            color: var(--dark-color, #3B444E);
+        }
+    }
+}
+
+.color {
+    &__blue {
+        color: #2787F5;
+    }
+}
