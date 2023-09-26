@@ -355,4 +355,20 @@ body {
   font-weight: 600;
   line-height: normal;
   margin-top: 25px;
+}
+
+.reliability {
+  margin-top: 100px;
+  height: 1385px;
+  background: #0E233B;
+}
+.reliability__header {
+  color: #FFF;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 1185px;
+  margin: 0 auto;
+  padding-top: 90px;
 }/*# sourceMappingURL=main.css.map */
