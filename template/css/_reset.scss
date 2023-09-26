@@ -84,10 +84,18 @@ body {
     width: 220px;
     height: 68px;
     border-radius: 48px;
-    background: linear-gradient(95deg, #1A1D83 -65.07%, #274F9E 42.74%, #477BC9 155.14%), #FFF;
+    // background: linear-gradient(95deg, #1A1D83 -65.07%, #274F9E 42.74%, #477BC9 155.14%), #FFF;
+    background: linear-gradient(95deg, #1A1D83, #274F9E, #477BC9, #274F9E, #1A1D83);
 
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     
+    transition: 0.5s;
+    background-size: 200%;
+    background-position: 0%;
+
+    &:hover {
+        background-position: 100%;
+    }
 }

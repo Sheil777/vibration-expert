@@ -82,10 +82,16 @@ body {
   width: 220px;
   height: 68px;
   border-radius: 48px;
-  background: linear-gradient(95deg, #1A1D83 -65.07%, #274F9E 42.74%, #477BC9 155.14%), #FFF;
+  background: linear-gradient(95deg, #1A1D83, #274F9E, #477BC9, #274F9E, #1A1D83);
   color: #FFF;
   font-size: 16px;
   font-weight: 500;
+  transition: 0.5s;
+  background-size: 200%;
+  background-position: 0%;
+}
+.button:hover {
+  background-position: 100%;
 }
 
 .promo {
@@ -175,9 +181,6 @@ body {
      object-fit: cover;
   z-index: -1;
 }
-.services__item:hover {
-  transform: translateY(-10px);
-}
 .services__name {
   color: #FFF;
   font-size: 32px;
@@ -201,4 +204,89 @@ body {
   bottom: 70px;
   left: 300px;
   padding-right: 10px;
+  transition: all 0.5s;
+}
+.services__link:hover {
+  color: #5d98f1;
+}
+
+.request {
+  margin-top: 90px;
+}
+.request__container {
+  border-radius: 48px;
+  background: #2787F5;
+  height: 512px;
+  box-sizing: border-box;
+  padding-left: 90px;
+  padding-right: 0;
+  display: flex;
+  align-items: center;
+}
+.request h2 {
+  color: #FFFFFF;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: normal;
+}
+.request__text {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 145%;
+}
+.request__form {
+  display: flex;
+}
+.request__input {
+  width: 260px;
+  height: 68px;
+  padding: 10px 24px;
+  border-radius: 48px;
+  background: #FFF;
+  color: var(--dark-color, #3B444E);
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+.request__input::-moz-placeholder {
+  color: #AEBBCF;
+}
+.request__input::placeholder {
+  color: #AEBBCF;
+}
+.request__button {
+  height: 68px;
+  width: 260px;
+}
+.request__right {
+  width: 1352px;
+  height: 312px;
+  border-radius: 24px;
+  background: #FFF;
+  box-shadow: 0px 0px 25px 0px rgba(14, 35, 59, 0.07);
+}
+
+.request-right__header {
+  color: var(--dark-color, #3B444E);
+  font-size: 32px;
+  font-weight: 600;
+}
+.request-right__text {
+  color: #6E7C87;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 145%;
+}
+.request-right__icon {
+  width: 56px;
+  height: 56px;
+}
+.request-right__number {
+  color: #2B54A3;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration-line: underline;
 }/*# sourceMappingURL=main.css.map */
