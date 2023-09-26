@@ -610,4 +610,20 @@ body {
   font-weight: 400;
   line-height: 145%;
   margin-top: 24px;
+}
+
+.trust {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.trust__items {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.trust__item {
+  width: 320px;
+  height: 160px;
 }/*# sourceMappingURL=main.css.map */
