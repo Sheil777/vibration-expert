@@ -321,4 +321,38 @@ body {
   font-weight: 400;
   border-bottom: 2px solid #2B54A3;
   margin-left: 15px;
+}
+
+.partners {
+  background: #F8FBFF;
+  margin-top: 70px;
+}
+.partners__container {
+  padding-top: 90px;
+}
+.partners__row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.partners-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.partners-item__img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.partners-item p {
+  max-width: 256px;
+  color: var(--dark-color, #3B444E);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 25px;
 }/*# sourceMappingURL=main.css.map */

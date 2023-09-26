@@ -1,0 +1,37 @@
+.partners {
+    background: #F8FBFF;
+    margin-top: 70px;
+
+    &__container {
+        padding-top: 90px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+}
+
+.partners-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    p {
+        max-width: 256px;
+        color: var(--dark-color, #3B444E);
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 25px;
+    }
+}
