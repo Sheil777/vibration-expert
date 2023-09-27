@@ -88,6 +88,8 @@
 .request-right {
 
     &__header {
+        position: relative;
+        z-index: 5;
         color: var(--dark-color, #3B444E);
         font-size: 32px;
         font-weight: 600;
@@ -104,6 +106,8 @@
     }
 
     &__text {
+        position: relative;
+        z-index: 5;
         color: #6E7C87;
         font-size: 20px;
         font-weight: 400;
@@ -124,6 +128,8 @@
     }
 
     &__number {
+        position: relative;
+        z-index: 5;
         color: #2B54A3;
         font-size: 24px;
         font-weight: 400;
