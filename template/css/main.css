@@ -697,6 +697,9 @@ body {
 .faq-spoiler__header button::before {
   transform: rotate(90deg);
 }
+.faq-spoiler__header button:hover {
+  cursor: pointer;
+}
 .faq-spoiler__header.active button::before {
   transform: rotate(0deg);
 }
