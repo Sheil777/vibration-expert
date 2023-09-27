@@ -545,6 +545,9 @@ body {
   padding-top: 90px;
   margin-bottom: -10px;
 }
+.feedback__slider {
+  overflow: hidden;
+}
 .feedback__items {
   display: flex;
   justify-content: space-between;
@@ -594,7 +597,7 @@ body {
 .feedback-item {
   border-radius: 24px;
   background: #F8FBFF;
-  width: 447px;
+  flex: 0 0 447px;
   height: 312px;
   padding: 45px 50px 56px 50px;
   box-sizing: border-box;
