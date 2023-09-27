@@ -1,8 +1,9 @@
 .completed {
+    background: #FFFFFF;
+    padding-top: 90px;
+    padding-bottom: 90px;
 
     &__container {
-        margin-top: 90px;
-        margin-bottom: 90px;
     }
 
     &__items {
@@ -57,7 +58,7 @@
         top: 0;
         left: 0;
         object-fit: cover;
-        z-index: -1;
+        z-index: 0;
     }
 
     &__header {
