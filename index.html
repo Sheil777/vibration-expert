@@ -305,14 +305,14 @@
                 <div class="faq__container _container">
                     <h2 class="section__header"><span class="color__blue">Ответы</span> на популярные вопросы</h2>
                     <div class="faq__flex">
-                        <div class="faq__left">
+                        <div class="faq__left faq-spoiler one">
                             <div class="faq-spoiler__item">
                                 <div class="faq-spoiler__header">
                                     <div class="faq-spoiler__text">
                                         <img src="./template/img/icon/faq-icon.svg" class="_ibg" alt="Знак вопроса">
                                         <p>Требуются ли для вибродиагностики разборка оборудования?</p>
                                     </div>
-                                    <button><img src="./template/img/icon/plus.svg" alt="Плюс"></button>
+                                    <button></button>
                                 </div>
                                 <p class="faq-spoiler__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam laboriosam placeat quam consectetur, minus voluptate sed optio! Atque quam eligendi debitis error animi a expedita veniam officia nobis. Doloremque, non!</p>
                             </div>
@@ -322,7 +322,7 @@
                                         <img src="./template/img/icon/faq-icon.svg" class="_ibg" alt="Знак вопроса">
                                         <p>Какие могут быть причины повышенной вибрации в оборудовании?</p>
                                     </div>
-                                    <button><img src="./template/img/icon/plus.svg" alt="Плюс"></button>
+                                    <button></button>
                                 </div>
                                 <p class="faq-spoiler__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam laboriosam placeat quam consectetur, minus voluptate sed optio! Atque quam eligendi debitis error animi a expedita veniam officia nobis. Doloremque, non!</p>
                             </div>
@@ -332,7 +332,7 @@
                                         <img src="./template/img/icon/faq-icon.svg" class="_ibg" alt="Знак вопроса">
                                         <p>Для какого оборудования может быть применена лазерная центровка валов</p>
                                     </div>
-                                    <button><img src="./template/img/icon/plus.svg" alt="Плюс"></button>
+                                    <button></button>
                                 </div>
                                 <p class="faq-spoiler__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam laboriosam placeat quam consectetur, minus voluptate sed optio! Atque quam eligendi debitis error animi a expedita veniam officia nobis. Doloremque, non!</p>
                             </div>
@@ -342,7 +342,7 @@
                                         <img src="./template/img/icon/faq-icon.svg" class="_ibg" alt="Знак вопроса">
                                         <p>Как вибродиагностика помогает сэкономить деньги на обслуживании оборудования?</p>
                                     </div>
-                                    <button><img src="./template/img/icon/plus.svg" alt="Плюс"></button>
+                                    <button></button>
                                 </div>
                                 <p class="faq-spoiler__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam laboriosam placeat quam consectetur, minus voluptate sed optio! Atque quam eligendi debitis error animi a expedita veniam officia nobis. Doloremque, non!</p>
                             </div>
@@ -352,7 +352,7 @@
                                         <img src="./template/img/icon/faq-icon.svg" class="_ibg" alt="Знак вопроса">
                                         <p>Как можно устранить нарушения соосности валов</p>
                                     </div>
-                                    <button><img src="./template/img/icon/plus.svg" alt="Плюс"></button>
+                                    <button></button>
                                 </div>
                                 <p class="faq-spoiler__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam laboriosam placeat quam consectetur, minus voluptate sed optio! Atque quam eligendi debitis error animi a expedita veniam officia nobis. Doloremque, non!</p>
                             </div>
@@ -362,7 +362,7 @@
                                         <img src="./template/img/icon/faq-icon.svg" class="_ibg" alt="Знак вопроса">
                                         <p>К чему приводит дисбаланс в работе ротора?</p>
                                     </div>
-                                    <button><img src="./template/img/icon/plus.svg" alt="Плюс"></button>
+                                    <button></button>
                                 </div>
                                 <p class="faq-spoiler__body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam laboriosam placeat quam consectetur, minus voluptate sed optio! Atque quam eligendi debitis error animi a expedita veniam officia nobis. Doloremque, non!</p>
                             </div>
@@ -371,11 +371,11 @@
                             <h3 class="faq-right__header">Не нашли ответа на свой вопрос?</h3>
                             <p class="faq-right__text">Задайте его нам, мы ответим вам в течение рабочего дня</p>
                             <form action="">
-                                <input type="text" name="name" placeholder="Ваше имя">
-                                <input type="text" name="phone" placeholder="Введи ваш номер">
-                                <input type="submit" value="Отправить заявку">
+                                <input class="faq-right__name" type="text" name="name" placeholder="Ваше имя">
+                                <input class="faq-right__phone" type="text" name="phone" placeholder="Введи ваш номер">
+                                <input class="faq-right__submit button" type="submit" value="Отправить заявку">
                             </form>
-                            <p class="faq__policy">Нажимая на кнопку, вы соглашаетесь с <a href="./pages/policy.html">политикой конфиденциальности</a> сайта</p>
+                            <p class="faq-right__policy">Нажимая на кнопку, вы соглашаетесь<br>с <a href="./pages/policy.html">политикой конфиденциальности</a> сайта</p>
                         </div>
                     </div>
                 </div>
@@ -387,5 +387,6 @@
     <script src="./template/js/jquery-3.6.0.min.js"></script>
     <script src="./template/js/jquery.maskedinput.min.js"></script>
     <script src="./template/js/scripts.js"></script>
+    <script src="./template/js/spoiler.js"></script>
 </body>
 </html>

@@ -25,9 +25,6 @@
         border-radius: 24px;
         background: #0E233B;
     }
-
-    &__policy {
-    }
 }
 
 .faq-spoiler {
@@ -57,7 +54,38 @@
         justify-content: space-between;
 
         button {
+            flex: 0 0 48px;
+            height: 48px;
             border-radius: 50%;
+            background-color: #E36D31;
+            position: relative;
+
+            &::after, &::before {
+                position: absolute;
+                top: 23px;
+                left: 17px;
+                display: block;
+                content: "";
+                width: 14px;
+                height: 2px;
+                background-color: white;
+                transition: all 0.5s;
+            }
+
+            &::before {
+                transform: rotate(90deg);
+            }
+        }
+
+        &.active {
+            button::before {
+                transform: rotate(0deg);
+                width: 0;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 
@@ -87,14 +115,84 @@
         font-style: normal;
         font-weight: 400;
         line-height: 160%; /* 25.6px */
+        padding-left: 38px;
+        padding-top: 10px;
+        // padding-right: 38px;
+        text-align: justify;
+        box-sizing: border-box;
     }
 }
 
 .faq-right {
+    padding: 65px 70px;
+    box-sizing: border-box;
 
     &__header {
+        max-width: 280px;
+        color: #FFF;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 
     &__text {
+        max-width: 280px;
+        color: rgba(255, 255, 255, 0.70);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%; /* 26.1px */
+        margin-top: 24px;
+    }
+
+    &__name, &__phone {
+        width: 100%;
+        height: 68px;
+        border-radius: 48px;
+        background: #FFF;        
+        padding: 10px 24px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+
+        &::placeholder {
+            color: #AEBBCF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    &__name {
+        margin-top: 50px;
+    }
+
+    &__phone {
+
+    }
+
+    &__submit {
+        width: 100%;
+        height: 68px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__policy {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; 
+        margin-top: 16px;
+
+        a {
+            color: rgba(255, 255, 255, 0.70);
+            text-decoration-line: underline;
+        }
     }
 }
