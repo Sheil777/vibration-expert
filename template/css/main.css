@@ -648,6 +648,8 @@ body {
 }
 .faq__right {
   flex: 0 1 40%;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 24px;
   background: #0E233B;
 }
@@ -734,6 +736,13 @@ body {
 .faq-right {
   padding: 65px 70px;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.faq-right__img {
+  position: absolute;
+  top: -36px;
+  right: -65px;
 }
 .faq-right__header {
   max-width: 280px;

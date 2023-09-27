@@ -23,6 +23,7 @@
 
     &__right {
         flex: 0 1 40%;
+        height: fit-content;
         border-radius: 24px;
         background: #0E233B;
     }
@@ -130,6 +131,14 @@
 .faq-right {
     padding: 65px 70px;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    &__img {
+        position: absolute;
+        top: -36px;
+        right: -65px;
+    }
 
     &__header {
         max-width: 280px;
