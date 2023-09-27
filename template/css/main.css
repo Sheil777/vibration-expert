@@ -503,6 +503,17 @@ body {
   padding-bottom: 41px;
   box-sizing: border-box;
 }
+.completed-item::before {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 .completed-item img {
   position: absolute;
   width: 100%;
@@ -521,6 +532,8 @@ body {
   line-height: 140%; /* 33.6px */
   margin-bottom: 20px;
   max-width: 500px;
+  position: relative;
+  z-index: 2;
 }
 .completed-item__button {
   display: flex;
@@ -535,6 +548,8 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  position: relative;
+  z-index: 2;
   transition: transform 0.5s;
 }
 .completed-item__button:hover {
