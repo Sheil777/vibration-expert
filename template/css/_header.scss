@@ -4,9 +4,6 @@
     top: 0;
     width: 100%;
 
-    &__container {
-    }
-
     &__top {
         height: 119px;
         display: flex;
@@ -43,14 +40,19 @@
 
     &__city {
         display: flex;
+        justify-content: space-evenly;
         align-items: center;
         width: 134px;
         height: 45px;
         border-radius: 36px;
         border: 1px dashed rgba(26, 32, 44, 0.40);
 
-        img {
+        &__arrow1 {
             width: 16px;
+        }
+
+        &__arrow2 {
+            width: 8px;
         }
 
         p {
@@ -69,6 +71,18 @@
     }
 
     &__phone {
+
+        img {
+
+        }
+
+        a {
+            color: #1A202C;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
     }
 
     &__button {
@@ -108,13 +122,51 @@
 
 .menu {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 948px;
 }
 
 .menu-item {
+    a {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .header-bottom {
+    background: #3A69B8;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        
+    }
 
     &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 14px;
+        background: #65BC54;
+        width: 280px;
+        height: 40px;
+
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 }

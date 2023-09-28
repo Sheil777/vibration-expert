@@ -129,14 +129,18 @@ body {
 }
 .header-top__city {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   width: 134px;
   height: 45px;
   border-radius: 36px;
   border: 1px dashed rgba(26, 32, 44, 0.4);
 }
-.header-top__city img {
+.header-top__city__arrow1 {
   width: 16px;
+}
+.header-top__city__arrow2 {
+  width: 8px;
 }
 .header-top__city p {
   color: #1A202C;
@@ -149,6 +153,13 @@ body {
   display: flex;
   align-items: center;
   gap: 17px;
+}
+.header-top__phone a {
+  color: #1A202C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .header-top__button {
   height: 68px;
@@ -182,6 +193,46 @@ body {
 
 .menu {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 948px;
+}
+
+.menu-item a {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.menu-item a:hover {
+  text-decoration: underline;
+}
+
+.header-bottom {
+  background: #3A69B8;
+}
+.header-bottom__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header-bottom__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 14px;
+  background: #65BC54;
+  width: 280px;
+  height: 40px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .promo {
@@ -243,7 +294,7 @@ body {
      object-position: top;
 }
 .promo__buttons {
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   gap: 16px;
 }

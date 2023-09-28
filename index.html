@@ -16,7 +16,7 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__container _container">
+            <div class="_container">
                 <div class="header__top header-top">
                     <div class="header-top__left">
                         <img src="./template/img/logo.png" alt="Логотип">
@@ -30,9 +30,9 @@
                         </div>
                     </div>
                     <div class="header-top__city">
-                        <img src="./template/img/city.svg" alt="Стрелочка">
+                        <img class="header-top__arrow1" src="./template/img/city.svg" alt="Стрелка">
                         <p>Москва</p>
-                        
+                        <img class="header-top__arrow2" src="./template/img/city-arrow.svg" alt="Стрелка">
                     </div>
                     <div class="header-top__right">
                         <div class="header-top__phone">
@@ -42,7 +42,9 @@
                         <a href="" class="header-top__button">Заказать звонок</a>
                     </div>
                 </div>
-                <div class="header__bottom">
+            </div>
+            <div class="header__bottom header-bottom">
+                <div class="header-bottom__container _container">
                     <nav>
                         <ul class="menu">
                             <li class="menu-item"><a href="">Главная</a></li>
