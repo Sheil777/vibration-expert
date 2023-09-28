@@ -94,6 +94,60 @@ body {
   background-position: 100%;
 }
 
+.burger {
+  display: none;
+  position: fixed;
+  width: 45px;
+  height: 30px;
+  top: 26px;
+  right: 22px;
+  z-index: 10;
+}
+.burger span, .burger::before, .burger::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: #585858;
+  position: absolute;
+}
+.burger span {
+  position: absolute;
+  top: 12.5px;
+  transition: all 0.3s;
+}
+.burger::before, .burger::after {
+  transition: all 0.5s;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+
+.burger_close {
+  z-index: 10;
+}
+.burger_close span {
+  /* transform: rotate(45deg); */
+  width: 0;
+  background-color: white;
+}
+.burger_close::before {
+  top: 15px;
+  transform: rotate(45deg);
+}
+.burger_close::after {
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 750px) {
+  .burger {
+    display: block;
+  }
+}
 .header {
   position: absolute;
   left: 0;
@@ -135,6 +189,7 @@ body {
   height: 45px;
   border-radius: 36px;
   border: 1px dashed rgba(26, 32, 44, 0.4);
+  margin-right: 10px;
 }
 .header-top__city__arrow1 {
   width: 16px;
@@ -154,12 +209,16 @@ body {
   align-items: center;
   gap: 17px;
 }
+.header-top__phone {
+  white-space: nowrap;
+}
 .header-top__phone a {
   color: #1A202C;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  white-space: nowrap;
 }
 .header-top__button {
   height: 68px;
@@ -235,6 +294,69 @@ body {
   line-height: normal;
 }
 
+@media (max-width: 1280px) {
+  .header-top__left p {
+    display: none;
+  }
+  .menu {
+    width: 760px;
+  }
+}
+@media (max-width: 1100px) {
+  .menu {
+    width: 620px;
+  }
+  .menu-item a {
+    font-size: 12px;
+  }
+  .header-top__button {
+    width: 140px;
+    height: 60px;
+    font-size: 14px;
+  }
+  .header-bottom img {
+    width: 14px;
+  }
+  .header-bottom p {
+    font-size: 12px;
+  }
+  .header-bottom__button {
+    width: 215px;
+  }
+}
+@media (max-width: 980px) {
+  .header-social {
+    display: none;
+  }
+  .header-top {
+    height: 80px;
+  }
+  .header-top__left img {
+    width: 140px;
+  }
+  .header-top__city {
+    display: none;
+  }
+  .header-top__right {
+    display: none;
+  }
+  .header-bottom__nav {
+    display: none;
+  }
+  .header-bottom__container {
+    display: flex;
+    justify-content: center;
+  }
+  .header-bottom__button {
+    flex: 0 1 350px;
+  }
+  .header-bottom__button img {
+    width: 18px;
+  }
+  .header-bottom__button p {
+    font-size: 16px;
+  }
+}
 .promo {
   height: 980px;
 }
@@ -317,6 +439,21 @@ body {
   line-height: normal;
 }
 
+@media (max-width: 768px) {
+  .promo {
+    height: 798px;
+  }
+  .promo__container {
+    padding-top: 212px;
+  }
+  .promo__container span {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .WhyChooseUs {
   background: #F8FBFF;
   padding-top: 90px;

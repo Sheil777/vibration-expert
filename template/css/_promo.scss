@@ -90,3 +90,22 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .promo {
+        height: 798px;
+
+        &__container {
+            padding-top: 212px;
+
+            span {
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }    
+}
