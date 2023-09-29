@@ -5,10 +5,7 @@
     width: 100%;
 
     &__top {
-        height: 119px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        
     }
 
     &__bottom {
@@ -17,6 +14,13 @@
 }
 
 .header-top {
+
+    &__container {
+        height: 119px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__left {
         display: flex;
@@ -233,7 +237,9 @@
     }
 
     .header-top {
-        height: 80px;
+        &__container {
+            height: 80px;
+        }
 
         &__left {
             img {
@@ -271,5 +277,113 @@
                 font-size: 16px;
             }
         }
+    }
+}
+
+
+/* --------------- */
+
+.header-phone {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 120%;
+    background: #0E233B;
+    z-index: 10;
+    transition: all 0.5s;
+
+    &__menu {
+        margin-top: 124px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        gap: 23px;
+    }
+
+    &__menu-item {
+        a {
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+
+.header-top__left {
+    img {
+        z-index: 30;
+    }
+}
+
+.header-phone-top {
+    &__city {
+        margin: 0 auto;
+        margin-top: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 36px;
+        border: 1px dashed rgba(255, 255, 255, 0.40);
+        width: 134px;
+        height: 45px;
+
+        p {
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &__arrow1 {
+        width: 16px;
+    }
+
+    &__arrow2 {
+        width: 8px;
+    }
+
+    &__phone {
+        margin-top: 18px;
+        text-align: center;
+
+        img {
+
+        }
+
+        a {
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+.header-phone-social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    &__item {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+@media (max-width: 980px) {
+    .header-phone.active {
+        overflow: visible;
+        left: 0;
     }
 }

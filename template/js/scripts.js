@@ -1,11 +1,12 @@
 $(document).ready(
     function(){
-        // $('.header__burger').click(
-        //     function (event) {
-        //         $('div.header__burger').toggleClass('header__burger_close');
-        //         $('nav.header__menu').toggleClass('header__menu_phone');
-        //     }
-        // );
+        $('.burger').click(
+            function (event) {
+                $('div.burger').toggleClass('burger_close');
+                $('div.header-phone').toggleClass('active');
+                $('body').toggleClass('lock');
+            }
+        );
 
         // Маски для номеров телефонов
         $(".request__input").mask("+7 (999) 999-99-99");

@@ -99,3 +99,7 @@ body {
         background-position: 100%;
     }
 }
+
+body.lock {
+    overflow: hidden;
+}
