@@ -2,8 +2,8 @@
     padding-top: 90px;
     background: #FFFFFF;
 
-    &__container {
-    }
+    // &__container {
+    // }
 
     &__items {
         display: flex;
@@ -52,9 +52,9 @@
 
         transition: transform 0.5s;
 
-        &:hover {
-            //transform: translateY(-10px);
-        }
+        // &:hover {
+        //     //transform: translateY(-10px);
+        // }
     }
 
     &__name {
@@ -69,8 +69,8 @@
         z-index: 3;
     }
 
-    &__line {
-    }
+    // &__line {
+    // }
 
     &__button {
         position: absolute;
@@ -98,3 +98,54 @@
     }
 }
 
+@media (max-width: 1125px) {
+    .services {
+        &__item {
+            flex: 0 1 100%;
+        }
+
+        &__name {
+            padding-right: 40px;
+        }
+
+    }
+}
+
+@media (max-width: 520px) {
+    .services {
+        &__name {
+            font-size: 20px;
+            line-height: normal;
+            left: 32px;
+            bottom: 162px;
+        }
+
+        &__items {
+            gap: 17px;
+        }
+
+        &__item {
+            padding: 0; // Убрал, т.к. нет смысла
+        }
+
+        &__button {
+            left: 32px;
+            bottom: 70px;
+        }
+
+        &__link {
+            left: 32px;
+            bottom: 36px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .services {
+        padding-top: 50px;
+
+        &__items {
+            margin-top: 38px;
+        }
+    }
+}

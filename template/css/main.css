@@ -734,6 +734,44 @@ body.lock {
   transform: translateY(-5px);
 }
 
+@media (max-width: 1125px) {
+  .services__item {
+    flex: 0 1 100%;
+  }
+  .services__name {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 520px) {
+  .services__name {
+    font-size: 20px;
+    line-height: normal;
+    left: 32px;
+    bottom: 162px;
+  }
+  .services__items {
+    gap: 17px;
+  }
+  .services__item {
+    padding: 0;
+  }
+  .services__button {
+    left: 32px;
+    bottom: 70px;
+  }
+  .services__link {
+    left: 32px;
+    bottom: 36px;
+  }
+}
+@media (max-width: 450px) {
+  .services {
+    padding-top: 50px;
+  }
+  .services__items {
+    margin-top: 38px;
+  }
+}
 .request {
   padding-top: 90px;
   padding-bottom: 70px;
