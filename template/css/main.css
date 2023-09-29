@@ -628,6 +628,8 @@ body.lock {
 @media (max-width: 800px) {
   .WhyChooseUs__item {
     flex: 0 1 100%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
 }
 @media (max-width: 650px) {
@@ -644,8 +646,6 @@ body.lock {
 @media (max-width: 400px) {
   .WhyChooseUs__item {
     padding: 30px;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
   }
   .WhyChooseUs__img {
     width: 92px;

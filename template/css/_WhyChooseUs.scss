@@ -66,6 +66,7 @@
     .WhyChooseUs {
         &__item {
             flex: 0 1 100%;
+            min-height: fit-content;
         }
     }
 }
@@ -88,7 +89,6 @@
     .WhyChooseUs {
         &__item {
             padding: 30px;
-            min-height: fit-content;
         }
 
         &__img {
