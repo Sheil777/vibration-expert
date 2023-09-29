@@ -790,7 +790,7 @@ body.lock {
   position: relative;
   overflow: hidden;
 }
-.request__container img {
+.request__img {
   position: absolute;
   top: 0;
   right: 0;
@@ -844,7 +844,7 @@ body.lock {
   background: #FFF;
   box-shadow: 0px 0px 25px 0px rgba(14, 35, 59, 0.07);
   box-sizing: border-box;
-  padding-left: 2.9vw;
+  padding-left: 54px;
   padding-top: 60px;
 }
 
@@ -893,6 +893,110 @@ body.lock {
   margin-left: 15px;
 }
 
+@media (max-width: 1350px) {
+  .request {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .request__container {
+    height: auto;
+    display: block;
+    padding: 80px 80px;
+  }
+  .request__left h2 {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    text-align: center;
+  }
+  .request__text {
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    max-width: 800px;
+    text-align: center;
+  }
+  .request__form {
+    justify-content: center;
+  }
+  .request__right {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: auto;
+    max-width: 680px;
+  }
+}
+@media (max-width: 1350px) {
+  .request__left h2 {
+    max-width: none;
+  }
+}
+@media (max-width: 760px) {
+  .request {
+    padding-top: 45px;
+  }
+  .request__container {
+    border-radius: 24px;
+    padding: 30px 30px;
+  }
+  .request__left h2 {
+    font-size: 32px;
+  }
+  .request__text {
+    margin-top: 10px;
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 145%;
+    text-align: left;
+  }
+  .request__form {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .request__form input {
+    width: 100%;
+  }
+  .request__form a {
+    width: 100%;
+  }
+  .request__right {
+    height: 280px;
+    margin-top: 20px;
+    padding: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .request__img {
+    top: auto;
+    bottom: 8px;
+    right: -35px;
+    height: 66%;
+  }
+  .request-right__header {
+    display: flex;
+    align-items: center;
+    font-size: 5.5vw;
+  }
+  .request-right__header::before {
+    margin-right: 1px;
+  }
+  .request-right__text {
+    margin-top: 18px;
+    font-size: 3.8vw;
+  }
+  .request-right__line {
+    margin-top: 16px;
+  }
+  .request-right__icon {
+    width: 8vw;
+    height: 8vw;
+  }
+  .request-right__number {
+    font-size: 4.9vw;
+    border-bottom: 1px solid #2B54A3;
+  }
+}
 .partners {
   background: #F8FBFF;
   padding-bottom: 100px;
