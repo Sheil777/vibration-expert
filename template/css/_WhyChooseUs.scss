@@ -11,8 +11,9 @@
     }
 
     &__item {
-        max-width: 447px;
-        height: 477px;
+        //max-width: 447px;
+        flex: 0 1 32%;
+        min-height: 477px;
         padding: 45px 45px 45px 50px;
         box-sizing: border-box;
         border-radius: 32px;
@@ -49,6 +50,58 @@
         b {
             color: var(--dark-color, #3B444E);
             font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .WhyChooseUs {
+        &__item {
+            flex: 0 1 49%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .WhyChooseUs {
+        &__item {
+            flex: 0 1 100%;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .WhyChooseUs {
+        padding-top: 46px;
+
+        &__items {
+            margin-top: 30px;
+        }
+    }
+
+    .section__header {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    .WhyChooseUs {
+        &__item {
+            padding: 30px;
+            min-height: fit-content;
+        }
+
+        &__img {
+            width: 92px;
+            height: 92px;
+        }
+
+        &__name {
+            font-size: 20px;
+        }
+
+        &__text {
+            font-size: 14px;
         }
     }
 }
