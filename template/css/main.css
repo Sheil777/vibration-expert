@@ -1034,6 +1034,9 @@ body.lock {
 }
 
 @media (max-width: 650px) {
+  .partners {
+    padding-bottom: 18px;
+  }
   .partners__container {
     padding-top: 24px;
   }
@@ -1054,7 +1057,7 @@ body.lock {
   }
 }
 .reliability {
-  height: 1385px;
+  padding-bottom: 90px;
   background: #0E233B;
 }
 .reliability__header {
@@ -1065,11 +1068,14 @@ body.lock {
   line-height: normal;
   max-width: 1185px;
   margin: 0 auto;
+  padding: 0 15px;
   padding-top: 90px;
 }
 .reliability__wrapper {
   margin-top: 134px;
   position: relative;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 .reliability__container {
   position: relative;
@@ -1078,6 +1084,7 @@ body.lock {
   background: #FFF;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   padding-top: 130px;
   padding-left: 90px;
   padding-right: 68px;
@@ -1135,7 +1142,7 @@ body.lock {
 .reliability__img {
   position: absolute;
   bottom: 0;
-  right: -110px;
+  left: 64%;
 }
 
 .reliability-attention {
@@ -1208,6 +1215,89 @@ body.lock {
   margin-top: 8px;
 }
 
+@media (max-width: 1200px) {
+  .reliability__img {
+    bottom: auto;
+    top: 52%;
+    left: 56%;
+  }
+}
+@media (max-width: 1000px) {
+  .reliability__img {
+    top: 58%;
+    left: 48%;
+  }
+}
+@media (max-width: 870px) {
+  .reliability__img {
+    display: none;
+  }
+  .reliability__container {
+    display: block;
+  }
+  .reliability__right {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 660px) {
+  .reliability__header {
+    font-size: 28px;
+    padding-top: 50px;
+  }
+  .reliability__wrapper {
+    margin-top: 22vw;
+  }
+  .reliability__container {
+    border-radius: 24px;
+    padding-left: 24px;
+    padding-right: 12px;
+    padding-top: 18vw;
+    padding-bottom: 4vw;
+  }
+  .reliability__left h3 {
+    font-size: 4.4vw;
+    margin-bottom: 6vw;
+  }
+  .reliability__right h3 {
+    font-size: 4.3vw;
+    margin-bottom: 5vw;
+  }
+  .reliability__right ul li {
+    margin-bottom: 4vw;
+  }
+  .reliability__right ul li::before {
+    width: 7.5vw;
+    height: 7.5vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .reliability__right ul li p {
+    font-size: 3.8vw;
+  }
+  .reliability-left__items {
+    background: white;
+    padding: 0;
+  }
+  .reliability-left__item h4 {
+    font-size: 4.4vw;
+  }
+  .reliability-left__item p {
+    font-size: 3.8vw;
+  }
+  .reliability-attention {
+    width: 78vw;
+    padding-right: 0;
+    padding-left: 9vw;
+  }
+  .reliability-attention__alert {
+    width: 12vw;
+    height: 12vw;
+  }
+  .reliability-attention p {
+    font-size: 4.1vw;
+    margin-left: 3vw;
+  }
+}
 .territory {
   padding-bottom: 90px;
   background: #FFFFFF;
