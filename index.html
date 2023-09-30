@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="./template/img/logo.png"> -->
     <link href="./template/fonts/TTFirsNeue-Regular/style.css" rel="stylesheet" type="text/css">
     <link href="./template/fonts/TTFirsNeue-DemiBold/style.css" rel="stylesheet" type="text/css">
     <link href="./template/fonts/TTFirsNeue-Medium/style.css" rel="stylesheet" type="text/css">
@@ -45,7 +46,7 @@
                 <div class="header-phone-social__item _ibg"><img src="./template/img/social/telegram.svg" alt="Telegram"></div>
             </div>
         </div>
-        <header class="header">
+        <header id="header" class="header">
             <div class="burger"><span></span></div>
             <div class="header__top header-top">
                 <div class="header-top__container _container">
@@ -565,24 +566,76 @@
                 <img class="contacts__img" src="./template/img/map.png" alt="Карта">
             </section>
         </main>
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="footer__top">
-                
-            </div>
-            <div class="footer-bottom">
-                <p class="footer-bottom__left">© Баланс-Мастер, все права защищены</p>
-                <a href="" class="footer-bottom__policy">Политика конфиденциальности</a>
-                <div class="footer-bottom__right">
-                    <p>Сайт разработали:</p>
-                    <img src="./template/img/klasika.png" alt="Логотип компании 'класика'">
+                <div class="footer__top_container _container">
+                    <div class="footer__links footer-links">
+                        <a href="#header"><img src="./template/img/footer/logoNegative.png" alt="Логотип" class="footer-links__img"></a>
+                        <div class="footer-links__item">
+                            <img src="./template/img/footer/telegram.svg" alt="Телеграм">
+                            <p>
+                                <span class="footer-links__header">Telegram</span>
+                                <span class="footer-links__text">Написать</span>
+                            </p>
+                        </div>
+                        <div class="footer-links__item">
+                            <img src="./template/img/footer/whatsapp.svg" alt="WhatsApp">
+                            <p>
+                                <span class="footer-links__header">WhatsApp</span>
+                                <span class="footer-links__text">Написать</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__flex footer-flex">
+                        <div class="footer-flex__col">
+                            <h2>Компания</h2>
+                            <ul>
+                                <li><a href="">Главная</a></li>
+                                <li><a href="">О компании</a></li>
+                                <li><a href="">Наши работы</a></li>
+                                <li><a href="">Лицензии</a></li>
+                                <li><a href="">Отзывы</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-flex__col">
+                            <h2>Услуги</h2>
+                            <ul>
+                                <li>Вибродиагностика</li>
+                                <li>Лазерная центровка валов</li>
+                                <li>Ремонт промышленного оборудования</li>
+                                <li>Динамическая балансировка (в собственных опорах)</li>
+                            </ul>
+                        </div>
+                        <div class="footer-flex__col">
+                            <h2>Оставайтесь на связи</h2>
+                            <ul>
+                                <li><img src="./template/img/footer/phone.svg" alt="Телефон"><a href="tel:+79273459125">+7(927)-345-9125</a></li>
+                                <li><img src="./template/img/footer/location.svg" alt="Локация">г. Уфа, ул. Водопроводная, д. 36</li>
+                                <li><img src="./template/img/footer/clock.svg" alt="Часы">Пн-Пт с 9:00 до 20:00</li>
+                                <li><img src="./template/img/footer/mail.svg" alt="Письмо"><a href="mailto:ooofortuna1ufa@mail.ru">ooofortuna1ufa@mail.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer> -->
+            <div class="footer__bottom footer-bottom">
+                <div class="footer-bottom__container _container">
+                    <p class="footer-bottom__left">© Баланс-Мастер, все права защищены</p>
+                    <a href="" class="footer-bottom__policy">Политика конфиденциальности</a>
+                    <div class="footer-bottom__right">
+                        <p>Сайт разработали:</p>
+                        <img src="./template/img/klasika.png" alt="Логотип компании 'класика'">
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="./template/js/jquery-3.6.0.min.js"></script>
     <script src="./template/js/jquery.maskedinput.min.js"></script>
     <script src="./template/js/swiper-bundle.min.js"></script>
     <script src="./template/js/scripts.js"></script>
+    <script src="./template/js/scroll.js"></script>
     <script src="./template/js/spoiler.js"></script>
 </body>
 </html>
