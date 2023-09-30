@@ -46,7 +46,7 @@
                 <div class="header-phone-social__item _ibg"><img src="./template/img/social/telegram.svg" alt="Telegram"></div>
             </div>
         </div>
-        <header id="header" class="header">
+        <header id="header" class="header lock-padding">
             <div class="burger"><span></span></div>
             <div class="header__top header-top">
                 <div class="header-top__container _container">
@@ -97,7 +97,7 @@
         </header>
         <main>
             <section class="promo">
-                <div class="promo__img">
+                <div class="promo__img lock-padding">
                     <img src="./template/img/promo.jpg" alt="Огромный завод">
                 </div>
                 <div class="promo__container _container">
@@ -105,7 +105,7 @@
                     <h1>Вибродиагностика и динамическая балансировка оборудования</h1>
                     <p>Выполняем балансировку на месте эксплуатации по всей России. Имеем собственную лабораторию не разрушающегося контроля.</p>
                     <div class="promo__buttons">
-                        <a href="" class="promo__button_1 button">Оставить заявку</a>
+                        <a href="#popup" class="promo__button_1 button popup-link">Оставить заявку</a>
                         <a href="" class="promo__button_2">Выбрать услугу</a>
                     </div>
                 </div>
@@ -630,6 +630,21 @@
                 </div>
             </div>
         </footer>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <h2>Оставьте заявку</h2>
+                    <p>Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и проведет бесплатную консультацию</p>
+                    <form action="">
+                        <input class="popup__input" type="text" placeholder="Ваше имя">
+                        <input class="popup__input mask-phone" type="text" placeholder="Введите ваш номер">
+                        <input class="popup__submit button" type="submit" value="Заказать обработку">
+                        <input class="popup__checkBox" type="checkbox" id="policy-checkBox">
+                        <label class="popup__policy" for="policy-checkBox">Нажимая на кнопку, вы соглашаетесь с <a href="">политикой конфиденциальности</a> обработки персональных данных</label>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./template/js/jquery-3.6.0.min.js"></script>
     <script src="./template/js/jquery.maskedinput.min.js"></script>
@@ -637,5 +652,6 @@
     <script src="./template/js/scripts.js"></script>
     <script src="./template/js/scroll.js"></script>
     <script src="./template/js/spoiler.js"></script>
+    <script src="./template/js/popups.js"></script>
 </body>
 </html>
