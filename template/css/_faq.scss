@@ -3,8 +3,8 @@
     padding-top: 90px;
     padding-bottom: 100px;
 
-    &__container {
-    }
+    // &__container {
+    // }
 
     &__flex {
         display: flex;
@@ -114,6 +114,8 @@
             font-style: normal;
             font-weight: 400;
             line-height: 145%;
+            padding-right: 10px;
+            box-sizing: border-box;
         }
     }
 
@@ -151,6 +153,8 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        position: relative;
+        z-index: 10;
     }
 
     &__text {
@@ -185,9 +189,9 @@
         margin-top: 50px;
     }
 
-    &__phone {
+    // &__phone {
 
-    }
+    // }
 
     &__submit {
         width: 100%;
@@ -210,6 +214,87 @@
         a {
             color: rgba(255, 255, 255, 0.70);
             text-decoration-line: underline;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .faq {
+        &__flex {
+            display: block;
+        }
+
+        &__right {
+            margin: 0 auto;
+            margin-top: 40px;
+            max-width: 550px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .faq {
+        padding-top: 23px;
+
+        &__left {
+            background: none;
+            box-shadow: none;
+            padding: 0;
+        }
+
+        &__flex {
+            margin-top: 30px;
+        }
+    }
+
+    .faq-spoiler {
+        &__item {
+            margin-bottom: 19px;
+        }
+
+        &__header {
+            padding: 0;
+
+            button {
+                flex: 0 0 32px;
+                height: 32px;
+            }
+        }
+
+        &__text {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &__body {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+
+    .faq-spoiler__header button::after, 
+    .faq-spoiler__header button::before {
+        top: 15px;
+        left: 9px;
+    }
+
+    .faq-right {
+        margin-top: 30px;
+        padding: 30px 28px;
+
+        &__text {
+            font-size: 16px;
+            margin-top: 16px;
+        }
+
+        &__name {
+            margin-top: 22px;
+        }
+
+        &__img {
+            top: -75px;
+            right: -142px;
         }
     }
 }
