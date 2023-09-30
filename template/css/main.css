@@ -1678,14 +1678,14 @@ body.lock {
   }
 }
 .trust {
-  padding-top: 90px;
+  padding-top: 20px;
   padding-bottom: 90px;
   background: #FFFFFF;
 }
 .trust__items {
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 40px;
 }
@@ -1694,6 +1694,16 @@ body.lock {
   height: 160px;
 }
 
+@media (max-width: 800px) {
+  .trust__items {
+    margin-top: 38px;
+    gap: 10px;
+  }
+  .trust__item {
+    width: 165px;
+    height: 83px;
+  }
+}
 .faq {
   background: #F8FBFF;
   padding-top: 90px;
