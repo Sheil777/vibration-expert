@@ -10,7 +10,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 30px;
+        gap: 5px;
         margin-top: 60px;
     }
 
@@ -18,7 +18,7 @@
         width: 188px;
         height: 68px;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 15px;
 
         &:hover {
             cursor: pointer;
@@ -29,7 +29,9 @@
 .completed-item {
     border-radius: 24px;
     overflow: hidden;
-    width: 685px;
+    
+    flex: 0 1 49%;
+
     height: 364px;
     position: relative;
     display: flex;
@@ -38,6 +40,7 @@
     padding-left: 50px;
     padding-bottom: 41px;
     box-sizing: border-box;
+    margin-bottom: 25px;
 
     &::before {
        display: block;
@@ -71,6 +74,7 @@
         max-width: 500px;
         position: relative;
         z-index: 2;
+        padding-right: 10px;
     }
 
     &__button {
@@ -92,6 +96,44 @@
         transition: transform 0.5s;
         &:hover {
             transform: translateY(-10px);
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .completed {
+        &__items {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .completed {
+        padding-top: 26px;
+        padding-bottom: 50px;
+
+        &__items {
+            margin-top: 40px;
+        }
+
+        &__more {
+            margin-top: 30px;
+        }
+    }
+
+    .completed-item {
+        padding-left: 30px;
+        padding-bottom: 30px;
+        height: 340px;
+        margin-bottom: 20px;
+
+        &__header {
+            font-size: 20px;
+        }
+    
+        h3 {
+            padding-right: 20px;
         }
     }
 }
