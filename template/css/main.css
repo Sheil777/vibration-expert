@@ -1240,6 +1240,9 @@ body.lock {
   }
 }
 @media (max-width: 660px) {
+  .reliability {
+    padding-bottom: 50px;
+  }
   .reliability__header {
     font-size: 28px;
     padding-top: 50px;
@@ -1319,7 +1322,24 @@ body.lock {
   margin-top: 20px;
   max-width: 1014px;
 }
+.territory__img img {
+  width: 100%;
+}
 
+@media (max-width: 576px) {
+  .territory p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .territory h2 {
+    font-size: 32px;
+    padding-top: 50px;
+  }
+  .territory__img {
+    margin-top: 34px;
+  }
+}
 .aboutCompany {
   background: #F8FBFF;
   padding-bottom: 44px;

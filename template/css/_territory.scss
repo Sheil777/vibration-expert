@@ -2,8 +2,8 @@
     padding-bottom: 90px;
     background: #FFFFFF;
     
-    &__container {
-    }
+    // &__container {
+    // }
 
     h2 {
         padding-top: 88px;
@@ -23,5 +23,31 @@
         margin: 0 auto;
         margin-top: 20px;
         max-width: 1014px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .territory {
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .territory {
+        h2 {
+            font-size: 32px;
+            padding-top: 50px;
+        }
+
+        &__img {
+            margin-top: 34px;
+        }
     }
 }
