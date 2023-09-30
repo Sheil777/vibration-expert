@@ -2202,8 +2202,12 @@ body.lock {
   font-weight: 400;
   line-height: 145%; /* 23.2px */
 }
+.footer-bottom__policy:hover {
+  text-decoration: underline;
+}
 .footer-bottom__right {
   display: flex;
+  align-items: center;
 }
 .footer-bottom__right p {
   color: #FFF;
@@ -2213,6 +2217,7 @@ body.lock {
   font-weight: 400;
   line-height: 140%; /* 16.8px */
 }
+
 @media (max-width: 1265px) {
   .footer__top_container {
     display: block;
