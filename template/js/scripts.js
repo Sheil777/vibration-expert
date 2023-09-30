@@ -15,9 +15,23 @@ $(document).ready(
 );
 
 let feedbackSlider = new Swiper('.feedback__slider',{
+    // direction: 'horizontal',
     spaceBetween: 30,
-    slidesPerView: 3,
-    slidesPerGroup: 3,
+
+    breakpoints: {
+        1100: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        },
+        768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+        }
+    },
+    
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+
 
     navigation: {
         nextEl: ".feedback__next",

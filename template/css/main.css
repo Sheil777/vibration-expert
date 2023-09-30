@@ -1569,12 +1569,7 @@ body.lock {
   margin-bottom: -10px;
   background: #FFFFFF;
 }
-.feedback__slider {
-  overflow: hidden;
-}
 .feedback__items {
-  display: flex;
-  justify-content: space-between;
   margin-top: 60px;
 }
 .feedback__buttons {
@@ -1621,8 +1616,6 @@ body.lock {
 .feedback-item {
   border-radius: 24px;
   background: #F8FBFF;
-  flex: 0 0 447px;
-  height: 312px;
   padding: 45px 50px 56px 50px;
   box-sizing: border-box;
 }
@@ -1631,7 +1624,7 @@ body.lock {
   align-items: center;
 }
 .feedback-item__avatar {
-  width: 72px;
+  flex: 0 0 72px;
   height: 72px;
 }
 .feedback-item__about {
@@ -1660,6 +1653,30 @@ body.lock {
   margin-top: 24px;
 }
 
+@media (max-width: 450px) {
+  .feedback {
+    padding-top: 50px;
+  }
+  .feedback__items {
+    margin-top: 32px;
+  }
+  .feedback__buttons {
+    margin-top: 19px;
+  }
+  .feedback-item {
+    padding: 30px;
+  }
+  .feedback-item__about {
+    margin-left: 7px;
+  }
+  .feedback-item__name {
+    font-size: 16px;
+  }
+  .feedback-item__text {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+}
 .trust {
   padding-top: 90px;
   padding-bottom: 90px;
