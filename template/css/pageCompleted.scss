@@ -1,0 +1,57 @@
+@import "reset";
+@import "burger";
+@import "header";
+
+.header__top {
+    background-color: #fff;
+}
+
+@import "track";
+
+.track {
+    padding-top: 190px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 980px) {
+    .track {
+        padding-top: 150px;
+    }
+}
+
+
+@import "completed";
+
+.completed {
+    padding-top: 40px;
+    &__container {
+        h2 {
+            color: var(--dark-color, #3B444E);
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .completed {
+        padding-top: 20px;
+        &__container {
+            h2 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@import "feedback";
+@import "request";
+@import "trust";
+@import "faq";
+@import "contacts";
+@import "footer";
+@import "popup";
