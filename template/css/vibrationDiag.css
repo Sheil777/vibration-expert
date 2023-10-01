@@ -648,6 +648,39 @@ section {
     flex: 0 1 100%;
   }
 }
+.price {
+  background: #F8FBFF;
+}
+.price__container {
+  padding-top: 132px;
+  padding-bottom: 90px;
+}
+.price__container img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 60px;
+}
+
+@media (max-width: 1300px) {
+  .price__container {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 740px) {
+  .price__container h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 550px) {
+  .price__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .price__container img {
+    margin-top: 14px;
+  }
+}
 .footer {
   background: #FFFFFF;
 }

@@ -2,9 +2,9 @@
     background: #fff;
     padding-top: 90px;
 
-    &__container {
+    // &__container {
 
-    }
+    // }
 
     &__items {
         display: flex;
@@ -25,9 +25,9 @@
         border-radius: 50%;
         overflow: hidden;
 
-        img {
+        // img {
 
-        }
+        // }
     }
 
     h3 {
@@ -58,7 +58,7 @@
 @media (max-width: 600px) {
     .whatHelp {
         padding-top: 40px;
-        
+
         &__container {
             h2 {
                 font-size: 30px;

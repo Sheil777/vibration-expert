@@ -1,0 +1,50 @@
+.price {
+    background: #F8FBFF;
+
+    &__container {
+        padding-top: 132px;
+        padding-bottom: 90px;
+
+        // h2 {
+
+        // }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .price {
+        &__container {
+            padding-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .price {
+        &__container {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .price {
+        &__container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            img {
+                margin-top: 14px;
+            }
+        }
+    }
+}
