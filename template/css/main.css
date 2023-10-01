@@ -2358,6 +2358,9 @@ body.lock {
   font-weight: 500;
   line-height: normal;
 }
+.popup__input:focus {
+  outline-color: #1A1D83;
+}
 .popup__submit {
   display: flex;
   width: 100%;
@@ -2368,10 +2371,6 @@ body.lock {
   align-items: center;
   border-radius: 48px;
   margin-bottom: 12px;
-}
-.popup__submit:focus {
-  outline-color: #2787F5;
-  background-color: red;
 }
 .popup__submit:hover {
   cursor: pointer;
@@ -2401,9 +2400,13 @@ body.lock {
     padding: 30px;
   }
   .popup h2 {
-    font-size: 35px;
+    font-size: 28px;
   }
   .popup p {
     font-size: 12px;
+  }
+  .popup__policy {
+    width: 86%;
+    font-size: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
