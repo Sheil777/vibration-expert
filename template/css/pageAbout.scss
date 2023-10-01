@@ -1,0 +1,31 @@
+@import "reset";
+@import "burger";
+@import "header";
+
+.header__top {
+    background-color: #fff;
+}
+
+@import "track";
+
+.track {
+    padding-top: 190px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 980px) {
+    .track {
+        padding-top: 150px;
+    }
+}
+
+@import "about";
+@import "numbers";
+@import "partners";
+@import "feedback";
+@import "request";
+@import "trust";
+@import "faq";
+@import "contacts";
+@import "footer";
+@import "popup";
