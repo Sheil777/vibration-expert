@@ -1,5 +1,18 @@
 @import "reset";
 @import "burger";
+
+.burger {
+    span, &::before, &::after {
+        background-color: #3A69B8;
+    }
+
+    &_close {
+        span, &::before, &::after {
+            background-color: #fff;
+        }
+    }
+}
+
 @import "header";
 @import "track";
 @import "servicesPromo";

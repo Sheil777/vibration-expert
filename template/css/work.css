@@ -156,6 +156,13 @@ section {
     display: block;
   }
 }
+.burger span, .burger::before, .burger::after {
+  background-color: #3A69B8;
+}
+.burger_close span, .burger_close::before, .burger_close::after {
+  background-color: #fff;
+}
+
 .header {
   position: absolute;
   left: 0;
@@ -698,6 +705,9 @@ section {
   }
 }
 @media (max-width: 710px) {
+  .works__container h2 {
+    font-size: 36px;
+  }
   .works__slider {
     height: 50vw;
   }
