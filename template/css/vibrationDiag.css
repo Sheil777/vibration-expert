@@ -500,7 +500,7 @@ section {
 }
 
 .servicesPromo {
-  height: 980px;
+  height: 890px;
 }
 .servicesPromo__img {
   position: fixed;
@@ -579,6 +579,73 @@ section {
 @media (max-width: 360px) {
   .servicesPromo__container h1 {
     font-size: 8.6vw;
+  }
+}
+.whatHelp {
+  background: #fff;
+  padding-top: 90px;
+}
+.whatHelp__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.whatHelp-item {
+  flex: 0 1 33.3%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.whatHelp-item__img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.whatHelp-item h3 {
+  color: var(--dark-color, #3B444E);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 25px;
+}
+.whatHelp-item p {
+  color: var(--base-color, #6E7C87);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 23.2px */
+  margin-top: 10px;
+}
+
+@media (max-width: 950px) {
+  .whatHelp-item {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 600px) {
+  .whatHelp {
+    padding-top: 40px;
+  }
+  .whatHelp__container h2 {
+    font-size: 30px;
+  }
+  .whatHelp-item__img {
+    width: 100px;
+    height: 100px;
+  }
+  .whatHelp-item h3 {
+    font-size: 18px;
+  }
+  .whatHelp-item p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 440px) {
+  .whatHelp-item {
+    flex: 0 1 100%;
   }
 }
 .footer {
