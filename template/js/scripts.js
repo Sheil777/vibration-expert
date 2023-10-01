@@ -8,6 +8,13 @@ $(document).ready(
             }
         );
 
+        $('.header-phone__menu-item a').click(
+            function (event) {
+                $('div.burger').toggleClass('burger_close');
+                $('div.header-phone').toggleClass('active');
+                $('body').toggleClass('lock');
+            }
+        );
         // Маски для номеров телефонов
         $(".request__input").mask("+7 (999) 999-99-99");
         $(".faq-right__phone").mask("+7 (999) 999-99-99");

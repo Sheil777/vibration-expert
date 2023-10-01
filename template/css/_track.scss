@@ -1,9 +1,11 @@
 .track {
-    font-size: 15px;
+    &__main, &__delimiter, &__current {
+        font-size: 15px !important;
+    }
 
     &__main {
         display: inline-block;
-        color: var(--dark-color, #3B444E);
+        color: var(--dark-color, #3B444E) !important;
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 21px */
@@ -11,7 +13,7 @@
 
     &__delimiter {
         display: inline-block;
-        color: var(--dark-color, #3B444E);
+        color: var(--dark-color, #3B444E) !important;
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 21px */
@@ -19,7 +21,7 @@
 
     &__current {
         display: inline-block;
-        color: var(--base-color, #6E7C87);
+        color: var(--base-color, #6E7C87) !important;
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 21px */
@@ -28,7 +30,8 @@
 
 @media (max-width: 500px) {
     .track {
-        font-size: 12px;
-
+        &__main, &__delimiter, &__current {
+            font-size: 12px !important;
+        }
     }
 }
