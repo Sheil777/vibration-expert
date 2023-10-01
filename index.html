@@ -560,7 +560,7 @@
                             <a href="tel:+79273459125" class="contacts__number">+7(927)-345-9125</a>
                             <p>Звоните с 9:00 до 20:00</p>
                         </div>
-                        <a href="" class="contacts__button button">Оставить заявку</a>
+                        <a href="#popup" class="contacts__button button popup-link">Оставить заявку</a>
                     </div>
                 </div>
                 <img class="contacts__img" src="./template/img/map.png" alt="Карта">
@@ -636,10 +636,10 @@
                     <h2>Оставьте заявку</h2>
                     <p>Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время и проведет бесплатную консультацию</p>
                     <form action="">
-                        <input class="popup__input" type="text" placeholder="Ваше имя">
-                        <input class="popup__input mask-phone" type="text" placeholder="Введите ваш номер">
+                        <input class="popup__input" name="name" type="text" placeholder="Ваше имя" required>
+                        <input class="popup__input mask-phone" name="phone" type="text" placeholder="Введите ваш номер" required>
                         <input class="popup__submit button" type="submit" value="Заказать обработку">
-                        <input class="popup__checkBox" type="checkbox" id="policy-checkBox">
+                        <input class="popup__checkBox" name="policy" type="checkbox" id="policy-checkBox" required>
                         <label class="popup__policy" for="policy-checkBox">Нажимая на кнопку, вы соглашаетесь с <a href="">политикой конфиденциальности</a> обработки персональных данных</label>
                     </form>
                 </div>
