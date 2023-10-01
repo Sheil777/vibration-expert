@@ -12,7 +12,7 @@
     <link href="../template/fonts/CeraPro-Regular/style.css" rel="stylesheet" type="text/css">
     <link href="../template/fonts/TTFirsNeue-Bold/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../template/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../template/css/pageFeedback.css">
+    <link rel="stylesheet" href="../template/css/pageContacts.css">
     <title>Вибро-эксперт</title>
 </head>
 <body>
@@ -99,14 +99,49 @@
             <div class="track _container">
                 <a href="../index.html" class="track__main">Главная</a>
                 <p class="track__delimiter"> / </p>
-                <p class="track__current">Отзывы</p>
-            </div>            
+                <p class="track__current">Контакты</p>
+            </div>
+            <section class="contacts-line">
+                <div class="contacts-line__container _container">
+                    <div class="contacts-line__item">
+                        <div class="contacts-line__header">Мы находимся по следующему адресу</div>
+                        <div class="contacts-line__text">г. Москва, Лубянский проезд, д.27/1</div>
+                    </div>
+                    <div class="contacts-line__item">
+                        <div class="contacts-line__header">Заявки принимаем каждый день без выходных</div>
+                        <a href="mailto:info@vibroexpert.com" class="contacts-line__text">info@vibroexpert.com</a>
+                    </div>
+                    <div class="contacts-line__item">
+                        <div class="contacts-line__header">С 9:00 до 21:00, без выходных</div>
+                        <a href="tel:+79999999999" class="contacts-line__text">+7 (999) 999-99-99</a>
+                    </div>
+                    <div class="contacts-line__item">
+                        <div class="contacts-line__header">График работы</div>
+                        <div class="contacts-line__text">Ежедневно с 09:00 до 21:00</div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="contacts__container _container">
+                    <div class="contacts__block">
+                        <p class="contacts__name">Контакты</p>
+                        <h2 class="contacts__header">Как с нами связаться?</h2>
+                        <p class="contacts__text">Въезд в офис строго по пропуску. Сообщите менеджеру желаемые время и дату визита, и мы будем ждать встречи с вами</p>
+                        <div class="contacts__phone">
+                            <a href="tel:+79273459125" class="contacts__number">+7(927)-345-9125</a>
+                            <p>Звоните с 9:00 до 20:00</p>
+                        </div>
+                        <a href="#popup" class="contacts__button button popup-link">Оставить заявку</a>
+                    </div>
+                    <img class="contacts__img" src="../template/img/map.png" alt="Карта">
+                </div>
+            </section>
             <section class="feedback">
                 <div class="feedback__container _container">
                     <h2 class="section__header"><span class="color__blue">Отзывы</span> наших клиентов</h2>
-                    <div class="feedback__slider">
-                        <div class="feedback__items">
-                            <div class="feedback__item feedback-item">
+                    <div class="feedback__slider swiper">
+                        <div class="feedback__items swiper-wrapper">
+                            <div class="feedback__item feedback-item swiper-slide">
                                 <div class="feedback-item__person">
                                     <div class="feedback-item__avatar">
                                         <img src="../template/img/avatar.svg" alt="Аватар">
@@ -118,7 +153,7 @@
                                 </div>
                                 <p class="feedback-item__text">Компания проявила себя как надежный партнер. Быстрый выезд, квалифицированные специалисты и круглосуточная поддержка. Они не только решили проблему, но и дали ценные совет...</p>
                             </div>
-                            <div class="feedback__item feedback-item">
+                            <div class="feedback__item feedback-item swiper-slide">
                                 <div class="feedback-item__person">
                                     <div class="feedback-item__avatar _ibg">
                                         <img src="../template/img/avatar.svg" alt="Аватар">
@@ -130,7 +165,7 @@
                                 </div>
                                 <p class="feedback-item__text">Компания проявила себя как надежный партнер. Быстрый выезд, квалифицированные специалисты и круглосуточная поддержка. Они не только решили проблему, но и дали ценные совет...</p>
                             </div>
-                            <div class="feedback__item feedback-item">
+                            <div class="feedback__item feedback-item swiper-slide">
                                 <div class="feedback-item__person">
                                     <div class="feedback-item__avatar">
                                         <img src="../template/img/avatar.svg" alt="Аватар">
@@ -142,7 +177,7 @@
                                 </div>
                                 <p class="feedback-item__text">Компания проявила себя как надежный партнер. Быстрый выезд, квалифицированные специалисты и круглосуточная поддержка. Они не только решили проблему, но и дали ценные совет...</p>
                             </div>
-                            <div class="feedback__item feedback-item">
+                            <div class="feedback__item feedback-item swiper-slide">
                                 <div class="feedback-item__person">
                                     <div class="feedback-item__avatar">
                                         <img src="../template/img/avatar.svg" alt="Аватар">
@@ -154,7 +189,7 @@
                                 </div>
                                 <p class="feedback-item__text">Компания проявила себя как надежный партнер. Быстрый выезд, квалифицированные специалисты и круглосуточная поддержка. Они не только решили проблему, но и дали ценные совет...</p>
                             </div>
-                            <div class="feedback__item feedback-item">
+                            <div class="feedback__item feedback-item swiper-slide">
                                 <div class="feedback-item__person">
                                     <div class="feedback-item__avatar">
                                         <img src="../template/img/avatar.svg" alt="Аватар">
@@ -166,7 +201,7 @@
                                 </div>
                                 <p class="feedback-item__text">Компания проявила себя как надежный партнер. Быстрый выезд, квалифицированные специалисты и круглосуточная поддержка. Они не только решили проблему, но и дали ценные совет...</p>
                             </div>
-                            <div class="feedback__item feedback-item">
+                            <div class="feedback__item feedback-item swiper-slide">
                                 <div class="feedback-item__person">
                                     <div class="feedback-item__avatar">
                                         <img src="../template/img/avatar.svg" alt="Аватар">
@@ -179,6 +214,10 @@
                                 <p class="feedback-item__text">Компания проявила себя как надежный партнер. Быстрый выезд, квалифицированные специалисты и круглосуточная поддержка. Они не только решили проблему, но и дали ценные совет...</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="feedback__buttons">
+                        <div class="feedback__prev">Назад</div>
+                        <div class="feedback__next button">Далее</div>
                     </div>
                 </div>
             </section>
@@ -297,21 +336,6 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="contacts">
-                <div class="contacts__container _container">
-                    <div class="contacts__block">
-                        <p class="contacts__name">Контакты</p>
-                        <h2 class="contacts__header">Как с нами связаться?</h2>
-                        <p class="contacts__text">Въезд в офис строго по пропуску. Сообщите менеджеру желаемые время и дату визита, и мы будем ждать встречи с вами</p>
-                        <div class="contacts__phone">
-                            <a href="tel:+79273459125" class="contacts__number">+7(927)-345-9125</a>
-                            <p>Звоните с 9:00 до 20:00</p>
-                        </div>
-                        <a href="#popup" class="contacts__button button popup-link">Оставить заявку</a>
-                    </div>
-                </div>
-                <img class="contacts__img" src="../template/img/map.png" alt="Карта">
             </section>
         </main>
         <footer class="footer">
