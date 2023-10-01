@@ -1065,6 +1065,93 @@ section {
     margin-top: 34px;
   }
 }
+.vdTrust {
+  background: #F8FBFF;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.vdTrust__container {
+  display: flex;
+  gap: 70px;
+}
+.vdTrust__left {
+  flex: 0 1 50%;
+}
+.vdTrust__img {
+  width: 100%;
+  height: 630px;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.vdTrust__right {
+  flex: 0 1 50%;
+}
+.vdTrust__right h2 {
+  font-size: 42px;
+  text-align: left;
+}
+.vdTrust__items {
+  margin-top: 30px;
+}
+.vdTrust__item {
+  position: relative;
+  padding-left: 48px;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+.vdTrust__item::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 32px;
+  height: 34px;
+  top: 0;
+  left: 0;
+  background: url("../img/aboutCompanyMarker.svg");
+}
+.vdTrust__item h3 {
+  color: var(--dark-color, #3B444E);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 28.8px */
+}
+.vdTrust__item p {
+  color: var(--base-color, #6E7C87);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 145%; /* 23.2px */
+}
+
+@media (max-width: 880px) {
+  .vdTrust {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .vdTrust__left {
+    display: none;
+  }
+  .vdTrust__right {
+    flex: 0 1 100%;
+  }
+  .vdTrust__right h2 {
+    text-align: center;
+  }
+  .vdTrust__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vdTrust__item {
+    max-width: 600px;
+  }
+}
+@media (max-width: 580px) {
+  .vdTrust__right h2 {
+    font-size: 30px;
+  }
+}
 .footer {
   background: #FFFFFF;
 }
