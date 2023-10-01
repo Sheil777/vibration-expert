@@ -46,3 +46,29 @@ let feedbackSlider = new Swiper('.feedback__slider',{
         prevEl: ".feedback__prev",
     },
 });
+
+let worksSlider = new Swiper('.works__slider', {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+
+    navigation: {
+        nextEl: ".works__next",
+        prevEl: ".works__prev",
+    },
+
+    // Миниатюры
+    thumbs: {
+        swiper: {
+            observer: true,
+            el: '.works-min__slider',
+            spaceBetween: 10,
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            breakpoints: {
+                450: {
+                    spaceBetween: 20,
+                }
+            },
+        }
+    }
+});
