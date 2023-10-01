@@ -67,6 +67,10 @@
         &::placeholder {
             color: #AEBBCF;
         }
+
+        &:focus {
+            outline-color: #1A1D83;
+        }
     }
 
     &__button {

@@ -183,6 +183,10 @@
             font-weight: 500;
             line-height: normal;
         }
+
+        &:focus {
+            outline-color: #1A1D83;
+        }
     }
 
     &__name {
