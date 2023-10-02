@@ -72,3 +72,25 @@ let worksSlider = new Swiper('.works__slider', {
         }
     }
 });
+
+
+/* Клик мышкой по карте */
+
+wrapMap.onclick = function() {
+    // убираем атрибут "style", в котором прописано свойство "pointer-events"
+    this.children[0].removeAttribute('style');
+}
+
+// Клик вне карты 
+
+// const div = wrapMap;
+ 
+// document.addEventListener( 'click', (e) => {
+// 	const withinBoundaries = e.composedPath().includes(div);
+ 
+//     console.log(withinBoundaries);
+
+// 	if ( ! withinBoundaries ) {
+// 		wrapMap.style.pointerEvents = 'none';
+// 	}
+// })
