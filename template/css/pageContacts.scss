@@ -94,12 +94,16 @@
     }
 }
 
-@media (max-width: 466px) {
+@media (max-width: 1100px) {
     .contacts {
         &__container {
-            img {
-                display: none;
-            }
+            display: block;
+            padding: 0 15px;
+        }
+
+        &__block {
+            width: auto;
+            max-width: 566px;
         }
     }
 }
