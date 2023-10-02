@@ -252,6 +252,20 @@
         }
 
         &__right {
+            // display: none;
+        }
+
+        &__phone {
+            position: absolute;
+            left: 15px;
+            top: 95px;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        &__button {
             display: none;
         }
     }
@@ -263,7 +277,7 @@
 
         &__container {
             display: flex;
-            justify-content: center;
+            justify-content: right;
         }
 
         &__button {
@@ -389,5 +403,17 @@
     .header-phone.active {
         overflow: auto;
         left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-bottom {
+        &__button {
+            flex: 0 1 50px;
+            
+            p {
+                display: none;
+            }
+        }
     }
 }

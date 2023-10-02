@@ -345,7 +345,15 @@ section {
   .header-top__city {
     display: none;
   }
-  .header-top__right {
+  .header-top__phone {
+    position: absolute;
+    left: 15px;
+    top: 95px;
+  }
+  .header-top__phone a {
+    color: #fff;
+  }
+  .header-top__button {
     display: none;
   }
   .header-bottom__nav {
@@ -353,7 +361,7 @@ section {
   }
   .header-bottom__container {
     display: flex;
-    justify-content: center;
+    justify-content: right;
   }
   .header-bottom__button {
     flex: 0 1 350px;
@@ -451,6 +459,14 @@ section {
   .header-phone.active {
     overflow: auto;
     left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .header-bottom__button {
+    flex: 0 1 50px;
+  }
+  .header-bottom__button p {
+    display: none;
   }
 }
 .track__main, .track__delimiter, .track__current {
