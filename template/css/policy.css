@@ -645,11 +645,15 @@ section {
   flex: 0 0 328px;
   max-width: 328px;
   height: 75px;
+  transition: all 0.3s;
 }
 .footer-links__item img {
   position: absolute;
   bottom: 20px;
   left: 32px;
+}
+.footer-links__item:hover {
+  background: #303943;
 }
 .footer-links p {
   display: flex;

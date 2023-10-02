@@ -26,6 +26,7 @@ if($('.feedback__slider.disable').length == 0) {
     let feedbackSlider = new Swiper('.feedback__slider',{
         // direction: 'horizontal',
         spaceBetween: 30,
+        loop: true,
 
         breakpoints: {
             1100: {

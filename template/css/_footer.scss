@@ -45,11 +45,16 @@
         flex: 0 0 328px;
         max-width: 328px;
         height: 75px;
+        transition: all 0.3s;
 
         img {
             position: absolute;
             bottom: 20px;
             left: 32px;
+        }
+        
+        &:hover {
+            background: #303943;
         }
     }
 

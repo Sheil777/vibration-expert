@@ -553,6 +553,9 @@ section {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .feedback__prev:hover {
   cursor: pointer;
@@ -569,6 +572,9 @@ section {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .feedback__next:hover {
   cursor: pointer;
@@ -729,7 +735,7 @@ section {
   color: #AEBBCF;
 }
 .request__input:focus {
-  outline-color: #1A1D83;
+  outline: none;
 }
 .request__button {
   height: 68px;
@@ -949,24 +955,31 @@ section {
 }
 
 .faq-spoiler__item {
+  padding: 0 20px;
   box-sizing: border-box;
   position: relative;
 }
 .faq-spoiler__item::after {
   position: absolute;
+  left: 10px;
   bottom: 0;
   display: block;
   content: "";
-  width: 100%;
+  width: 97%;
   border-bottom: 1px solid #ECF3FC;
 }
 .faq-spoiler__item:last-child::after {
   display: none;
 }
+.faq-spoiler__item:hover {
+  cursor: pointer;
+  background: #F8FBFF;
+  border-radius: 12px;
+}
 .faq-spoiler__header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 20px 0px;
   box-sizing: border-box;
   transition: all 0.2s;
 }
@@ -996,10 +1009,6 @@ section {
 }
 .faq-spoiler__header.active button::before {
   transform: rotate(0deg);
-}
-.faq-spoiler__header:hover {
-  cursor: pointer;
-  background: #F8FBFF;
 }
 .faq-spoiler__text {
   display: flex;
@@ -1070,6 +1079,7 @@ section {
   padding: 10px 24px;
   box-sizing: border-box;
   margin-bottom: 16px;
+  font-size: 16px;
 }
 .faq-right__name::-moz-placeholder, .faq-right__phone::-moz-placeholder {
   color: #AEBBCF;
@@ -1086,7 +1096,7 @@ section {
   line-height: normal;
 }
 .faq-right__name:focus, .faq-right__phone:focus {
-  outline-color: #1A1D83;
+  outline: none;
 }
 .faq-right__name {
   margin-top: 50px;
@@ -1362,11 +1372,15 @@ section {
   flex: 0 0 328px;
   max-width: 328px;
   height: 75px;
+  transition: all 0.3s;
 }
 .footer-links__item img {
   position: absolute;
   bottom: 20px;
   left: 32px;
+}
+.footer-links__item:hover {
+  background: #303943;
 }
 .footer-links p {
   display: flex;
