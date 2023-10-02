@@ -62,11 +62,18 @@
         &__container {
             h2 {
                 font-size: 30px;
+                text-align: left;
             }
+        }
+
+        &__items {
+            margin-top: 40px;
         }
     }
 
     .whatHelp-item {
+        padding: 0;
+        
         &__img {
             width: 100px;
             height: 100px;
@@ -77,7 +84,7 @@
         }
 
         p {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 }

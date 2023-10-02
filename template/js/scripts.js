@@ -19,6 +19,27 @@ $(document).ready(
         $(".request__input").mask("+7 (999) 999-99-99");
         $(".faq-right__phone").mask("+7 (999) 999-99-99");
         $(".mask-phone").mask("+7 (999) 999-99-99");
+
+
+        // $('.header-top__city').hover(
+        //     function (event) {
+        //         if(document.querySelector(".wrapper").offsetWidth > 980)
+        //             $('.header-top__city').toggleClass('active');
+        
+        //         //$('.close-city-list').toggleClass('active');
+        //     }
+        // );
+        
+        $('.header-phone-top__city').click(
+            function (event) {
+                if(document.querySelector(".wrapper").offsetWidth <= 980) {
+                    $('.header-phone-top__city').toggleClass('active');
+                }
+            }
+        );
+
+
+
     }
 );
 
@@ -75,6 +96,7 @@ let worksSlider = new Swiper('.works__slider', {
         }
     }
 });
+
 
 
 /* Клик мышкой по карте */

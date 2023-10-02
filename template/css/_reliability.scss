@@ -247,23 +247,27 @@
 
         &__right {
             h3 {
-                font-size: 4.3vw;
+                font-size: 16px;
                 margin-bottom: 5vw;
             }
 
             ul {
                 li {
-                    margin-bottom: 4vw;
+                    // margin-bottom: 4vw;
+                    margin-bottom: 20px;
 
                     &::before {
-                        width: 7.5vw;
-                        height: 7.5vw;
+                        // width: 7.5vw;
+                        // height: 7.5vw;
+                        width: 24px;
+                        height: 24px;
                         background-size: contain;
                         background-repeat: no-repeat;
                     }
 
                     p {
-                        font-size: 3.8vw;
+                        // font-size: 3.8vw;
+                        font-size: 14px;
                     }
                 }
             }
@@ -278,11 +282,13 @@
 
         &__item {
             h4 {
-                font-size: 4.4vw;
+                // font-size: 4.4vw;
+                font-size: 16px;
             }
 
             p {
-                font-size: 3.8vw;
+                // font-size: 3.8vw;
+                font-size: 14px;
             }
         }
     }

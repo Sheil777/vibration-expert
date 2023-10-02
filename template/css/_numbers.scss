@@ -59,12 +59,18 @@
     .numbers {
         &__container {
             h3 {
-                font-size: 22px;
+                font-size: 20px;
             }
         }
 
         &__img {
             height: 180px;
+        }
+
+        &__right {
+            p {
+                font-size: 14px;
+            }
         }
     }
 }

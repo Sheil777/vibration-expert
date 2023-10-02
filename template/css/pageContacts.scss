@@ -44,6 +44,13 @@
     }
 
     &__item {
+        a {
+            transition: all 0.2s;
+
+            &:hover {
+                color: #3A69B8;
+            }
+        }
     }
 
     &__header {
@@ -76,7 +83,7 @@
     .contacts-line {
         &__item {
             flex: 0 1 100%;
-            text-align: center;
+            text-align: left;
         }
     }
 }

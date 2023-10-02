@@ -119,6 +119,24 @@
 
         &__item {
             flex: 0 1 100%;
+            margin-bottom: 30px;
+            padding-left: 34px;
+
+            h3 {
+                font-size: 18px;
+
+                &::before {
+                    width: 27px;
+                    height: 30px;
+                    background-size: cover;
+                    left: -38px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                margin-top: 8px;
+            }
         }
     }
 }

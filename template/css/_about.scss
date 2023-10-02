@@ -39,8 +39,8 @@
         }
     }
 
-    &__items {
-    }
+    // &__items {
+    // }
 
     &__item {
         color: var(--base-color, #6E7C87);
@@ -104,8 +104,16 @@
 
         &__left {
             h3 {
-                font-size: 22px;
+                font-size: 20px;
             }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &__item {
+            font-size: 14px;
         }
 
         &__img {
