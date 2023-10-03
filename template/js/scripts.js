@@ -38,8 +38,61 @@ $(document).ready(
             }
         );
 
+        
+        // Москва123
+
+        // $('.header-city__wrap p').change(
+        //     function(){
+        //         console.log($('.header-city__wrap p').text().length)
+        //     }
+        // )
+
+        // $(".header-city__wrap p").bind("DOMSubtreeModified", function(){
+        //     console.log($('.header-city__wrap p').text().length)
+        //   });
+
+        // const targetEl = document.querySelector('.header-city__wrap p');
+
+        // function callback(mutations, observer) {
+        //     console.log(mutations)
+        // }
+
+        // const observer = new MutationObserver(callback);
+
+        // observer.observe(targetEl, {
+        //     characterData: true,
+        //     characterDataOldValue: true
+        // });
+
+        function cutCity(city){
+            if(city.length >= 9){
+                res = city.substr(0, 7)+'...';
+            } else {
+                res = city;
+            }
+
+            return res;
+        }
+
+        function changeCity(event) {
+            let city = event.target.textContent;
+
+            $('.header-city__wrap p').text(cutCity(city));
+            $('.header-phone-top__wrap p').text(cutCity(city));
+        }
 
 
+        $('.header-phone-top__city ul li').click(
+            function(event){
+                changeCity(event)
+            }
+        )
+
+        $('.header-top__city ul li').click(
+            function(event){
+                changeCity(event)
+            }
+        )
     }
 );
 
