@@ -1,0 +1,35 @@
+.header {
+    position: relative;
+}
+
+.track {
+    padding-top: 30px;
+
+    p {
+        margin-top: 0;
+    }
+}
+
+.promo {
+    &__img {
+        top: 0;
+    }
+
+    &__container {
+        padding-top: 147px;
+    }
+}
+
+.servicesPromo {
+    &__container {
+        padding-top: 0;
+    }
+
+    &__img {
+        top: 0;
+    }
+}
+
+.policy {
+    padding-top: 0;
+}
